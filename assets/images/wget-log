@@ -1,0 +1,6 @@
+--2024-03-31 20:45:16--  https://eu-central.storage.cloudconvert.com/tasks/fcb6fb2a-e42f-4c23-8600-630366fb5048/portfolio_7757638.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Resolving eu-central.storage.cloudconvert.com (eu-central.storage.cloudconvert.com)... 51.89.41.104, 162.19.234.170, 51.89.41.108, ...
+Connecting to eu-central.storage.cloudconvert.com (eu-central.storage.cloudconvert.com)|51.89.41.104|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2024-03-31 20:45:16 ERROR 403: Forbidden.
+
