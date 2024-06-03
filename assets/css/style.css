@@ -1221,6 +1221,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+#skill-section { column-count: 1; }
 
 
 
@@ -1248,7 +1249,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .project-img,
-  .blog-banner-box { height: auto; }
+  .blog-banner-box { height: 200px; }
 
 }
 
@@ -1638,6 +1639,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
+
+  #skill-section { column-count: 2; }
+
   
 }
 
@@ -1753,6 +1757,8 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .blog-banner-box { height: 230px; }
+
+  #skill-section { column-count: 2; }
 
 }
 
@@ -1878,5 +1884,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
+  #skill-section { column-count: 2; }
 
 }
