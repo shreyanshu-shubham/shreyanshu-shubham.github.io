@@ -89,22 +89,22 @@
     ],
     "awards":[
         {
-            "type":"ctf_and_hackathon",
+            "type":"ctf and hackathon",
             "title":"1st place in Hack-o-Smart 2023 organized by the Tumkur Smart City Ltd. and SIT, Tumkur",
             "link":["decoders-sit hack-o-smart.webp"]
         },
         {
-            "type":"ctf_and_hackathon",
+            "type":"ctf and hackathon",
             "title":"7th place in Sudo Override organized by the IIT Patna",
             "link":["iit-patna sudo-override-team.webp","iit-patna sudo-override-scoreboard.webp"]
         },
         {
-            "type":"ctf_and_hackathon",
+            "type":"ctf and hackathon",
             "title":"Participated in CAPTURE THE FLAG organized by the SARK SIT",
             "link":["sark-sit capture-the-flag.webp"]
         },
         {
-            "type":"ctf_and_hackathon",
+            "type":"ctf and hackathon",
             "title":"Participated in Smart India Hackathon 2022 organized by the Ministry of Education",
             "link":["minstry-of-education sih-2022.webp"]
         },

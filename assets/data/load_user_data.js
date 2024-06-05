@@ -54,24 +54,24 @@ function load_data_skill(data_array) {
 }
 function load_data_projects(){}
 function load_data_awards(data_array){
-    cert_type = new Set()
-    for(cert in data_array){
-        cert_type.add(data_array[cert].type)
-    }
-    cert_list_filter = document.getElementById('certificates-select-list-filter')
-    cert_type.forEach((t)=>{
-        element_string = `<li class="filter-item"><button data-filter-btn>${t}</button></li>`
-        let div = document.createElement('div')
-        div.innerHTML = element_string;
-        cert_list_filter.appendChild(div.firstChild)
-    })
-    cert_list = document.getElementById('certificates-select-list')
-    cert_type.forEach((t)=>{
-        element_string = `<li class="select-item"><button data-select-item>${t}</button></li>`
-        let div = document.createElement('div')
-        div.innerHTML = element_string;
-        cert_list.appendChild(div.firstChild)
-    })
+    // cert_type = new Set()
+    // for(cert in data_array){
+    //     cert_type.add(data_array[cert].type)
+    // }
+    // cert_list_filter = document.getElementById('certificates-select-list-filter')
+    // cert_type.forEach((t)=>{
+    //     element_string = `<li class="filter-item"><button data-filter-btn>${t}</button></li>`
+    //     let div = document.createElement('div')
+    //     div.innerHTML = element_string;
+    //     cert_list_filter.appendChild(div.firstChild)
+    // })
+    // cert_list = document.getElementById('certificates-select-list')
+    // cert_type.forEach((t)=>{
+    //     element_string = `<li class="select-item"><button data-select-item>${t}</button></li>`
+    //     let div = document.createElement('div')
+    //     div.innerHTML = element_string;
+    //     cert_list.appendChild(div.firstChild)
+    // })
     cert_list_element = document.getElementById('certificates-list')
     cert_image_path = 'assets/certificates/'
     data_array.forEach((cert_item)=>{
@@ -89,7 +89,7 @@ fetch('assets/data/user_profile.json')
         load_data_education(user_data.education)
         load_data_skill(user_data.skills)
 
-        load_data_awards(user_data.awards)
+        // load_data_awards(user_data.awards)
 
     })
     .catch((e) => console.error(e));
