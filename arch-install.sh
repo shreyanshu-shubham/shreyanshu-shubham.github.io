@@ -8,13 +8,11 @@ echo   # Partition number
 echo   # First sector (Accept default: 1)
 echo +1G # Last sector (Accept default: varies)
 # boot PART
-echo g # Create a new empty DOS partition table
 echo n # Add a new partition
 echo   # Partition number
 echo   # First sector (Accept default: 1)
 echo +1G # Last sector (Accept default: varies)
 # boot PART
-echo g # Create a new empty DOS partition table
 echo n # Add a new partition
 echo   # Partition number
 echo   # First sector (Accept default: 1)
