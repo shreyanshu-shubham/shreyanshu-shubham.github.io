@@ -1,6 +1,8 @@
 setfont ter-114b
 
-wipefs -a /dev/sda
+read -p "Enter the drive: " var_drive_path
+
+wipefs -a ${var_drive_path}
 
 (
 # EFI PART
@@ -14,22 +16,22 @@ echo n # Add a new partition
 echo   # Partition number
 echo   # First sector (Accept default: 1)
 echo +1G # Last sector (Accept default: varies)
-# boot PART
+# root PART
 echo n # Add a new partition
 echo   # Partition number
 echo   # First sector (Accept default: 1)
 echo   # Last sector (Accept default: varies)
 
 echo w # Write changes
-) | fdisk /dev/sda
+) | fdisk ${var_drive_path}
 
-mkfs.fat -F 32 /dev/sda1
-mkfs.ext4 /dev/sda2
-mkfs.ext4 /dev/sda3
+mkfs.fat -F 32 ${var_drive_path}1
+mkfs.ext4 ${var_drive_path}2
+mkfs.ext4 ${var_drive_path}3
 
-mount /dev/sda3 /mnt
-mount --mkdir /dev/sda2 /mnt/boot
-mount --mkdir /dev/sda1 /mnt/boot/EFI
+mount ${var_drive_path}3 /mnt
+mount --mkdir ${var_drive_path}2 /mnt/boot
+mount --mkdir ${var_drive_path}1 /mnt/boot/EFI
 
 pacstrap -K /mnt base linux linux-firmware linux-headers
 genfstab -U /mnt >> /mnt/etc/fstab
