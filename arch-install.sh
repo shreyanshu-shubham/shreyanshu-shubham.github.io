@@ -1,6 +1,7 @@
 setfont ter-114b
 
-read -p "Enter the drive: " var_drive_path
+echo -n "Enter the drive path: "
+read var_drive_path
 
 wipefs -a ${var_drive_path}
 
