@@ -1,5 +1,7 @@
 setfont ter-114b
 
+wipefs -a /dev/sda
+
 (
 # EFI PART
 echo g # Create a new empty DOS partition table
