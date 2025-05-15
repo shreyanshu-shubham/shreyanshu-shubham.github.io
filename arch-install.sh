@@ -33,5 +33,3 @@ mount --mkdir /dev/sda1 /mnt/boot/EFI
 
 pacstrap -K /mnt base linux linux-firmware linux-headers
 genfstab -U /mnt >> /mnt/etc/fstab
-
-arch-chroot /mnt
