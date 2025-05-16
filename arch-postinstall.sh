@@ -15,11 +15,9 @@ pacman -S xf86-video-vmware
 
 mkinitcpio -p linux
 
-vim /etc/locale.gen  
+# vim /etc/locale.gen  
+sed -i 's/^#en_US.UTF-8/en_US.UTF-8/'  /etc/locale.gen  
 locale-gen
-
-mkdir /boot/EFI
-mount efi-partition here
 
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
 
