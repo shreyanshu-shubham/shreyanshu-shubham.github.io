@@ -5,7 +5,7 @@ passwd #change root password
 useradd -m -g users -G wheel shreyanshu
 passwd shreyanshu 
 
-pacman -S base-devel dosfstoold grub efibootmgr mtools vim networkmanager openssh sudo
+pacman -S base-devel dosfstools grub efibootmgr mtools vim networkmanager openssh sudo
 
 systemctl enable sshd
 
