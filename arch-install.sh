@@ -14,7 +14,7 @@ echo n # Add a new partition
 echo   # Partition number
 echo   # First sector (Accept default: 2)
 echo +1G # Last sector
-# boot PART
+# root PART
 echo n # Add a new partition
 echo   # Partition number
 echo   # First sector (Accept default: 3)
