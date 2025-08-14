@@ -62,7 +62,8 @@
     ],
     "skills":[
         {"category":"Languages","items":["Bash","Java","Python"]},
-        {"category":"Dev Tools","items":["Android Studio","VSCode","Git","GNU/Linux","IntelliJ","Docker","Postgresql"]},
+        {"category":"Dev Tools","items":["Android Studio","VSCode","Git","GNU/Linux","IntelliJ","Postgresql"]},
+        {"category":"Dev Ops Tools","items":["Docker","Kubernetes","Helm Charts","Gitlab CI"]},
         {"category":"Web Technology","items":["HTML/CSS","JS","Flask (Python)","Spring Boot (Java)"]},
         {"category":"Mobile Technology","items":["Flutter (Dart)"]},
         {"category":"Graphic Tools","items":["Adobe Photoshop","Adobe After Effects","Adobe Premier Pro"]}
